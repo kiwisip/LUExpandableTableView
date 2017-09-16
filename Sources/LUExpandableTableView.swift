@@ -18,7 +18,7 @@ open class LUExpandableTableView: UITableView {
     public weak var expandableTableViewDelegate: LUExpandableTableViewDelegate?
     
     /// The `UITableViewRowAnimation` animation used for showing/hiding rows when expand/collapse occurs. Default value is `fade`
-    public var animation: UITableViewRowAnimation = .fade
+    public var animation: UITableViewRowAnimation = .none
     
     /** The object that acts as the data source of the table view.
      
@@ -88,9 +88,9 @@ open class LUExpandableTableView: UITableView {
         dataSource = self
         
         rowHeight = UITableViewAutomaticDimension
-        estimatedRowHeight = 60
+        estimatedRowHeight = rowHeight
         sectionHeaderHeight = UITableViewAutomaticDimension
-        estimatedSectionHeaderHeight = 60
+        estimatedSectionHeaderHeight = rowHeight
     }
     
     // MARK: - Public Functions
