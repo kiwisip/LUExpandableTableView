@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LUExpandableTableView"
-  s.version      = "2.1.0"
+  s.version      = "3.0.0"
   s.summary      = "A subclass of UITableView with expandable and collapsible sections"
   s.description  = "A subclass of UITableView with expandable and collapsible sections that is easy to use and highly customisable"
 
@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
   
   s.source_files   = "Sources/*.{swift}"
   s.preserve_paths = "README*"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 end

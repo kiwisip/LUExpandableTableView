@@ -1,13 +1,15 @@
 <p align="center" >
-    <img src="Icon.png" title="Title image" float=center width=300>
+    <img src="ReadmeIcon.png" title="Title image" float=center width=300>
 </p>
 
 # LUExpandableTableView
 A subclass of `UITableView` with expandable and collapsible sections
 
 [![Build Status](http://img.shields.io/travis/LaurentiuUngur/LUExpandableTableView/master.svg?style=flat)](https://travis-ci.org/LaurentiuUngur/LUExpandableTableView)
+![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![Pod Version](http://img.shields.io/cocoapods/v/LUExpandableTableView.svg?style=flat)](https://cocoapods.org/pods/LUExpandableTableView/)
-![language](https://img.shields.io/badge/Language-Swift3-8E44AD.svg)
 ![Pod Platform](http://img.shields.io/cocoapods/p/LUExpandableTableView.svg?style=flat)
 [![Pod License](http://img.shields.io/cocoapods/l/LUExpandableTableView.svg?style=flat)](https://opensource.org/licenses/MIT)
 
@@ -25,9 +27,9 @@ A subclass of `UITableView` with expandable and collapsible sections
 $ sudo gem install cocoapods
 ```
 
-> CocoaPods 1.2.0+ is required.
+> CocoaPods 1.4.0+ is required.
 
-To integrate LUExpandableTableView into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate `LUExpandableTableView` into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
@@ -44,12 +46,25 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+
+### Carthage
+
+You can use [Carthage](https://github.com/Carthage/Carthage) to install `LUExpandableTableView` by adding it to your `Cartfile`:
+
+```
+github "LaurentiuUngur/LUExpandableTableView" ~> 3.0
+```
+
+Then run `carthage update`.
+
+If this is your first time using Carthage in the project, you'll need to go through some additional steps as explained [over at Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+
 ### Swift Package Manager
 
 To integrate using Apple's [Swift Package Manager](https://swift.org/package-manager), add the following as a dependency to your `Package.swift`:
 
 ```Swift
-.Package(url: "https://github.com/LaurentiuUngur/LUExpandableTableView", majorVersion: 2)
+.Package(url: "https://githubLaurentiuUngur/LUExpandableTableView", majorVersion: 3)
 ```
 
 Here's an example of `PackageDescription`:
@@ -59,13 +74,13 @@ import PackageDescription
 
 let package = Package(name: "MyApp",
     dependencies: [
-        .Package(url: "https://github.com/LaurentiuUngur/LUExpandableTableView", majorVersion: 2)
+        .Package(url: "https://github.com/LaurentiuUngur/LUExpandableTableView", majorVersion: 3)
     ])
 ```
 
 ### Manually
 
-If you prefer not to use either of the before mentioned dependency managers, you can integrate LUExpandableTableView into your project manually.
+If you prefer not to use either of the before mentioned dependency managers, you can integrate `LUExpandableTableView` into your project manually.
 
 ## Usage
 
@@ -171,8 +186,8 @@ extension ViewController: LUExpandableTableViewDelegate {
 
 ## Requirements
 
-- Xcode 8.1+
-- Swift 3.0+
+- Xcode 9.0+
+- Swift 4.0+
 - iOS 9.0+
 
 ## Author

@@ -9,4 +9,5 @@ workspace '../LUExpandableTableView'
 
 target :LUExpandableTableViewExample do
   pod 'LUExpandableTableView', :path => '../'
+
 end
